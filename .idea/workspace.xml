@@ -1,0 +1,951 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f19416b2-6459-4d4f-84c1-a38153929c32" name="Default Changelist" comment="web: getcode (removed my email addresses)">
+      <change afterPath="$PROJECT_DIR$/public/assets/vl_videos/cat1/1.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vl_videos/cat1/1_.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vl_videos/cat1/1_bkp.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vl_videos/cat1/2.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vl_videos/cat1/2_.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vl_videos/cat1/2_bkp.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vl_videos/cat1/preview.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vl_videos/cat10/1.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vl_videos/cat10/2.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vl_videos/cat10/preview.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vl_videos/cat11/1.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vl_videos/cat11/2.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vl_videos/cat11/preview.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vl_videos/cat12/1.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vl_videos/cat12/2.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vl_videos/cat12/preview.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vl_videos/cat13/1.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vl_videos/cat13/2.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vl_videos/cat13/preview.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vl_videos/cat14/1.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vl_videos/cat14/2.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vl_videos/cat14/preview.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vl_videos/cat15/1.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vl_videos/cat15/2.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vl_videos/cat15/preview.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vl_videos/cat16/1.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vl_videos/cat16/cat16/1.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vl_videos/cat16/cat16/preview.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vl_videos/cat16/preview.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vl_videos/cat17/1.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vl_videos/cat17/preview.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vl_videos/cat18/1.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vl_videos/cat18/preview.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vl_videos/cat19/1.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vl_videos/cat19/preview.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vl_videos/cat2/1.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vl_videos/cat2/2.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vl_videos/cat2/preview.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vl_videos/cat2/preview2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vl_videos/cat20/1.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vl_videos/cat20/preview.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vl_videos/cat21/1.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vl_videos/cat21/preview.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vl_videos/cat22/1.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vl_videos/cat22/preview.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vl_videos/cat23/1.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vl_videos/cat23/preview.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vl_videos/cat24/1.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vl_videos/cat24/preview.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vl_videos/cat25/1.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vl_videos/cat25/preview.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vl_videos/cat26/1.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vl_videos/cat26/preview.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vl_videos/cat27/1.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vl_videos/cat27/preview.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vl_videos/cat28/1.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vl_videos/cat28/preview.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vl_videos/cat29/1.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vl_videos/cat29/preview.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vl_videos/cat3/1.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vl_videos/cat3/2.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vl_videos/cat3/preview.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vl_videos/cat30/1.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vl_videos/cat30/preview.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vl_videos/cat31/1.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vl_videos/cat31/preview.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vl_videos/cat32/1.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vl_videos/cat32/preview.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vl_videos/cat33/1.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vl_videos/cat33/preview.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vl_videos/cat34/1.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vl_videos/cat34/preview.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vl_videos/cat35/1.m4v" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vl_videos/cat35/preview.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vl_videos/cat36/1.m4v" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vl_videos/cat36/preview.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vl_videos/cat37/1.m4v" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vl_videos/cat37/preview.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vl_videos/cat38/1.m4v" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vl_videos/cat38/preview.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vl_videos/cat39/1.m4v" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vl_videos/cat39/preview.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vl_videos/cat4/1.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vl_videos/cat4/2.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vl_videos/cat4/preview.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vl_videos/cat4/preview2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vl_videos/cat40/1.m4v" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vl_videos/cat40/preview.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vl_videos/cat41/1.m4v" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vl_videos/cat41/preview.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vl_videos/cat42/1.m4v" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vl_videos/cat42/preview.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vl_videos/cat5/1.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vl_videos/cat5/2.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vl_videos/cat5/preview.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vl_videos/cat5/preview2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vl_videos/cat6/1.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vl_videos/cat6/2.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vl_videos/cat6/preview.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vl_videos/cat7/1.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vl_videos/cat7/2.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vl_videos/cat7/preview.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vl_videos/cat8/1.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vl_videos/cat8/2.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vl_videos/cat8/preview.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vl_videos/cat8/preview2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vl_videos/cat9/1.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vl_videos/cat9/1_bkp.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vl_videos/cat9/2.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vl_videos/cat9/2_bkp.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/vl_videos/cat9/preview.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/assets/vl_videos/cat40/1.m4v" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/assets/vl_videos/cat40/preview.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/assets/vl_videos/cat41/1.m4v" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/assets/vl_videos/cat41/preview.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/assets/vl_videos/cat42/1.m4v" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/assets/vl_videos/cat42/preview.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/lesson.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/login.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/packets.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/zovexpress.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/zovexpress.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Codes.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Comment.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Country.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/General.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CodesController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CommentController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CountryController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/GeneralController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/OtpravkaController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PriceController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/TrackingsController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UsersController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/MemberMiddleware.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/MemberMiddleware.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Otpravka.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Price.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Trackings.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_08_19_000000_create_failed_jobs_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_12_15_085618_country.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_12_15_090512_pack.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_12_15_141437_routes.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_12_16_174200_review.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_12_16_174430_general.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_12_16_192904_price.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_12_19_213239_create_trackings_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_12_22_123226_create_codes_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_01_06_104553_create_comments_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_02_18_055306_create_otpravkas_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/css/Article-List.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/css/Brands.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/css/Footer-Clean.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/css/Header-Dark.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/css/Highlight-Clean.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/css/Map-Clean.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/css/Registration-Form-with-Photo.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/css/Simple-Slider.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/css/Team-Clean.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/css/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/Ellipse.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/black-plane.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/calc.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/contact.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/delivery-truck.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/fast-delivery.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/fast-delivery.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/flagchina.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/flagturkey.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/flagusa.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/info1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/info2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/info3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/info4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/info5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/instacart.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/kickstarter.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/line.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/loadingData.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/img/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/logotip.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/lyft.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/meeting.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/mountain_bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/onedash.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/onedash2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/pinterest.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/plane.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/profile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/shopify.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/tasco.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/tasco.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/tasco2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/truckk.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/twitter.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/underline.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/uparrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/zov_logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/img/zovlogo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/Simple-Slider.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/bs-animation.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/js/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/assets/css/Article-List.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/assets/css/Brands.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/assets/css/Footer-Clean.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/assets/css/Header-Dark.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/assets/css/Highlight-Clean.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/assets/css/Map-Clean.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/assets/css/Registration-Form-with-Photo.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/assets/css/Simple-Slider.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/assets/css/Team-Clean.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/assets/css/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/assets/img/0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/assets/img/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/assets/img/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/assets/img/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/assets/img/Ellipse.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/assets/img/flagchina.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/assets/img/flagturkey.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/assets/img/flagusa.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/assets/img/info1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/assets/img/info2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/assets/img/info3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/assets/img/info4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/assets/img/info5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/assets/img/instacart.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/assets/img/kickstarter.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/assets/img/line.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/assets/img/loadingData.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/assets/img/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/assets/img/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/assets/img/logotip.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/assets/img/lyft.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/assets/img/meeting.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/assets/img/mountain_bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/assets/img/onedash.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/assets/img/onedash2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/assets/img/pinterest.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/assets/img/profile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/assets/img/shopify.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/assets/img/tasco.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/assets/img/tasco.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/assets/img/twitter.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/assets/img/underline.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/assets/img/uparrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/assets/js/Simple-Slider.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/assets/js/bs-animation.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/assets/js/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/cab.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/cabcodelist.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/cabedit.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/cabpass.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/calculator.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/contact.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/manshet.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/page.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/reviews.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/root/addotpravka.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/root/addtrack.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/root/admins.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/root/comments.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/root/editor.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/root/home.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/root/layout.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/root/nousers.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/root/otpravkadetails.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/root/otpravkalist.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/root/pricelist.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/root/tracklist.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/root/userdetails.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/root/users.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/tracking.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/trackinglist.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>vi</find>
+      <find>getli</find>
+      <find>FL</find>
+      <find>form</find>
+      <find>store</find>
+      <find>lo</find>
+      <find>adminuser</find>
+      <find>getusers</find>
+      <find>getlist</find>
+      <find>getus</find>
+      <find>membersc</find>
+      <find>calculate</find>
+      <find>otprav</find>
+      <find>codewrinfo</find>
+      <find>getu</find>
+      <find>infokodform</find>
+      <find>cal</find>
+      <find>usercode</find>
+      <find>calcu</find>
+      <find>infokod</find>
+      <find>ouraddress</find>
+      <find>loadaddress</find>
+      <find>ouraddress2</find>
+      <find>viewm</find>
+      <find>loadaddress2</find>
+      <find>coun</find>
+      <find>getl</find>
+      <find>getcountr</find>
+      <find>getUserFLNames</find>
+      <find>usercodelist</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+      <replace>td</replace>
+      <replace>assets/root/plu</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>C:\xampp\htdocs\zovexpress\resources\views</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/facade/ignition" />
+      <path value="$PROJECT_DIR$/vendor/facade/ignition-contracts" />
+      <path value="$PROJECT_DIR$/vendor/facade/flare-client-php" />
+      <path value="$PROJECT_DIR$/vendor/nesbot/carbon" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/vendor/nunomaduro/collision" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/type-resolver" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-common" />
+      <path value="$PROJECT_DIR$/vendor/psy/psysh" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/vendor/laravel/tinker" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/type" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/vendor/laravel/framework" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/resource-operations" />
+      <path value="$PROJECT_DIR$/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/vendor/vlucas/phpdotenv" />
+      <path value="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-token-stream" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/vendor/filp/whoops" />
+      <path value="$PROJECT_DIR$/vendor/symfony/service-contracts" />
+      <path value="$PROJECT_DIR$/vendor/phpspec/prophecy" />
+      <path value="$PROJECT_DIR$/vendor/symfony/mime" />
+      <path value="$PROJECT_DIR$/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/vendor/scrivo/highlight.php" />
+      <path value="$PROJECT_DIR$/vendor/symfony/debug" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-idn" />
+      <path value="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php72" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-iconv" />
+      <path value="$PROJECT_DIR$/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/vendor/dnoegel/php-xdg-base-dir" />
+      <path value="$PROJECT_DIR$/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/vendor/mockery/mockery" />
+      <path value="$PROJECT_DIR$/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php73" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/vendor/symfony/error-handler" />
+      <path value="$PROJECT_DIR$/vendor/tijsverkoyen/css-to-inline-styles" />
+      <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/vendor/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/vendor/symfony/translation-contracts" />
+      <path value="$PROJECT_DIR$/vendor/dragonmantank/cron-expression" />
+      <path value="$PROJECT_DIR$/vendor/league/flysystem" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/vendor/opis/closure" />
+      <path value="$PROJECT_DIR$/vendor/fzaninotto/faker" />
+      <path value="$PROJECT_DIR$/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/vendor/jakub-onderka/php-console-color" />
+      <path value="$PROJECT_DIR$/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/vendor/fideloper/proxy" />
+      <path value="$PROJECT_DIR$/vendor/jakub-onderka/php-console-highlighter" />
+      <path value="$PROJECT_DIR$/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/vendor/paragonie/random_compat" />
+      <path value="$PROJECT_DIR$/vendor/ramsey/uuid" />
+      <path value="$PROJECT_DIR$/vendor/erusev/parsedown" />
+      <path value="$PROJECT_DIR$/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/vendor/phpoption/phpoption" />
+    </include_path>
+  </component>
+  <component name="ProjectId" id="1Zfr36Rkyypx0BP25awt3z3D2Iw" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="editor.config.ad.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\vl\resources\views" />
+      <recent name="C:\xampp\htdocs\zovexpress\resources\views\root" />
+      <recent name="C:\xampp\htdocs\zovexpress\resources\views\assets\img" />
+      <recent name="C:\xampp\htdocs\zovexpress\resources\views" />
+      <recent name="C:\xampp\htdocs\zovexpress\public\assets\img" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\zovexpress\public\assets\img" />
+      <recent name="C:\xampp\htdocs\zovexpress\resources\views" />
+      <recent name="C:\xampp\htdocs\zovexpress\public" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner scope="XML" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f19416b2-6459-4d4f-84c1-a38153929c32" name="Default Changelist" comment="" />
+      <created>1575969032177</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1575969032177</updated>
+      <workItem from="1575969033778" duration="731000" />
+      <workItem from="1575970918944" duration="255000" />
+      <workItem from="1575971215272" duration="141817000" />
+      <workItem from="1577433302740" duration="14445000" />
+      <workItem from="1577695809280" duration="21911000" />
+      <workItem from="1578162286318" duration="96251000" />
+      <workItem from="1579284578416" duration="25555000" />
+      <workItem from="1579457987907" duration="8431000" />
+      <workItem from="1579802117891" duration="459000" />
+      <workItem from="1580155699492" duration="502000" />
+      <workItem from="1580197947437" duration="9002000" />
+      <workItem from="1580716719143" duration="11840000" />
+      <workItem from="1580805878677" duration="19899000" />
+      <workItem from="1580910566075" duration="23153000" />
+      <workItem from="1581521394160" duration="1247000" />
+      <workItem from="1581600104236" duration="3000" />
+      <workItem from="1581764070787" duration="11214000" />
+      <workItem from="1581939456952" duration="11217000" />
+      <workItem from="1582227371869" duration="448000" />
+      <workItem from="1582315430301" duration="26901000" />
+      <workItem from="1582915888920" duration="15186000" />
+      <workItem from="1583372109104" duration="17404000" />
+      <workItem from="1584137826298" duration="2650000" />
+      <workItem from="1584305698280" duration="3118000" />
+      <workItem from="1585240788024" duration="26451000" />
+      <workItem from="1585693068721" duration="6287000" />
+    </task>
+    <task id="LOCAL-00001" summary="Laravel - Registration, Login, Cabinet">
+      <created>1576360567683</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1576360567683</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Reviews,  Tables: - Country, Packs">
+      <created>1576400767232</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1576400767233</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Users controller">
+      <created>1577099304683</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1577099304683</updated>
+    </task>
+    <task id="LOCAL-00004" summary="change password,  tracking Check">
+      <created>1577122194177</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1577122194177</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Password Change finished">
+      <created>1577213853755</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1577213853756</updated>
+    </task>
+    <task id="LOCAL-00006" summary="CodeList finished">
+      <created>1577255762816</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1577255762816</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Tracking - yarimchiq">
+      <created>1577343934681</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1577343934681</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Admin LTE design">
+      <created>1577717484568</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1577717484568</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Sent Information by Fidan loaded">
+      <created>1577728044522</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1577728044523</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Samolet finished. Adminkada admin image changed to icon">
+      <created>1578166418447</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1578166418448</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Admin panel: Editor in admin/pages/pageid">
+      <created>1578179136002</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1578179136002</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Admin panel: Editor Save to Database">
+      <created>1578229558553</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1578229558553</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Admin panel: ICONS">
+      <created>1578240953374</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1578240953374</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Admin panel: Adminmiddleware,  logout">
+      <created>1578242703301</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1578242703301</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Admin panel: Users (Reg, NoReg, Admins)">
+      <created>1578269234347</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1578269234347</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Admin panel: Comments">
+      <created>1578322384573</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1578322384573</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Admin panel: Comments">
+      <created>1578322440914</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1578322440914</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Admin panel: fixed some bugs in icons">
+      <created>1578328133978</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1578328133978</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Admin panel: posilka icons">
+      <created>1578374004703</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1578374004703</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Admin panel: submenu colors">
+      <created>1578400092310</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1578400092310</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Admin panel: Add Track  not finished">
+      <created>1578406579116</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1578406579116</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Admin panel: Add Track, TrackList">
+      <created>1578521518627</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1578521518627</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Web:  Info pages take data from DB">
+      <created>1578914301177</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1578914301177</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Web:  footer addresses and links,  Year">
+      <created>1578988640786</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1578988640786</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Web:  Reviews from DB,  allow field in comments table">
+      <created>1579286358864</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1579286358864</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Web: VehicleType&#10;Admin: VehicleType">
+      <created>1579291744724</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1579291744724</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Web: Contact send to email, Review Full List">
+      <created>1579346841445</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1579346841445</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Web: Code, info, Tracking - new tasks">
+      <created>1579460821776</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1579460821776</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Web: Tracking,  Calculator">
+      <created>1579541301199</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1579541301199</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Web: Crisp chat">
+      <created>1580236358523</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1580236358527</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Web: design : logo, menu,  Registration IE8  - fixed">
+      <created>1580487947723</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1580487947723</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Admin : tacklist new columns">
+      <created>1580716336772</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1580716336772</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Admin : otpravka&#10;Web: Manshet, Calc error">
+      <created>1580752990315</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1580752990315</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Web: UserCode without reqistration, Adress quanchjou">
+      <created>1580850884961</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1580850884961</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Web: simple registration">
+      <created>1581163796061</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1581163796061</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Web: simple registration (with email sending) finished">
+      <created>1581485340111</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1581485340111</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Web: simple registration code generated,  mail sended, address copied,  calculator price calculated">
+      <created>1581774422752</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1581774422752</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Admin: Otpravkalar">
+      <created>1582018668082</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1582018668082</updated>
+    </task>
+    <task id="LOCAL-00039" summary="WEB: Tasco png logotip">
+      <created>1582227792125</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1582227792125</updated>
+    </task>
+    <task id="LOCAL-00040" summary="WEB:fixes on tasco, sosial links etc">
+      <created>1582317774542</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1582317774542</updated>
+    </task>
+    <task id="LOCAL-00041" summary="WEB:fixes on registration , home paage taxt,  addresses,  and etc">
+      <created>1582345849803</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1582345849803</updated>
+    </task>
+    <task id="LOCAL-00042" summary="Admin: Tracklist: otpravka column,  Add track wtih selecting otpravka">
+      <created>1582484935919</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1582484935919</updated>
+    </task>
+    <task id="LOCAL-00043" summary="WEB: country on select change address">
+      <created>1582830939687</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1582830939687</updated>
+    </task>
+    <task id="LOCAL-00044" summary="WEB: phone pattern deleted&#10;Admin:  Otpravka percent and place editing&#10;        Tracking list with grouped otpravka">
+      <created>1582984747143</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1582984747143</updated>
+    </task>
+    <task id="LOCAL-00045" summary="Admin: Improved design of  Tracking list with grouped otpravka">
+      <created>1582989047625</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1582989047626</updated>
+    </task>
+    <task id="LOCAL-00046" summary="Admin: Calculator,  Home page counts">
+      <created>1582992332082</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1582992332082</updated>
+    </task>
+    <task id="LOCAL-00047" summary="WEB: address changed">
+      <created>1583372427218</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1583372427218</updated>
+    </task>
+    <task id="LOCAL-00048" summary="Admin: AddPosilka-da Koda gore useri tapmaq">
+      <created>1583949246993</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1583949246993</updated>
+    </task>
+    <task id="LOCAL-00049" summary="web: getcode (removed my email addresses)">
+      <created>1584212881230</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1584212881231</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
+    <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Web:  Reviews from DB,  allow field in comments table" />
+    <MESSAGE value="Web: VehicleType&#10;Admin: VehicleType" />
+    <MESSAGE value="Web: Contact send to email, Review Full List" />
+    <MESSAGE value="Web: Code, info, Tracking - new tasks" />
+    <MESSAGE value="Web: Tracking,  Calculator" />
+    <MESSAGE value="Web: Crisp chat" />
+    <MESSAGE value="Web: design : logo, menu,  Registration IE8  - fixed" />
+    <MESSAGE value="Admin : tacklist new columns" />
+    <MESSAGE value="Admin : otpravka&#10;Web: Manshet, Calc error" />
+    <MESSAGE value="Web: UserCode without reqistration, Adress quanchjou" />
+    <MESSAGE value="Web: simple registration" />
+    <MESSAGE value="Web: simple registration (with email sending) finished" />
+    <MESSAGE value="Web: simple registration code generated,  mail sended, address copied,  calculator price calculated" />
+    <MESSAGE value="Admin: Otpravkalar" />
+    <MESSAGE value="WEB: Tasco png logotip" />
+    <MESSAGE value="WEB:fixes on tasco, sosial links etc" />
+    <MESSAGE value="WEB:fixes on registration , home paage taxt,  addresses,  and etc" />
+    <MESSAGE value="Admin: Tracklist: otpravka column,  Add track wtih selecting otpravka" />
+    <MESSAGE value="WEB: country on select change address" />
+    <MESSAGE value="WEB: phone pattern deleted&#10;Admin:  Otpravka percent and place editing&#10;        Tracking list with grouped otpravka" />
+    <MESSAGE value="Admin: Improved design of  Tracking list with grouped otpravka" />
+    <MESSAGE value="Admin: Calculator,  Home page counts" />
+    <MESSAGE value="WEB: address changed" />
+    <MESSAGE value="Admin: AddPosilka-da Koda gore useri tapmaq" />
+    <MESSAGE value="web: getcode (removed my email addresses)" />
+    <option name="LAST_COMMIT_MESSAGE" value="web: getcode (removed my email addresses)" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="275" y="22" key="#Notifications" timestamp="1585240836315">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="22" key="#Notifications/0.0.1366.728@0.0.1366.728" timestamp="1585240836315" />
+    <state x="413" y="118" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1585484922377">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="413" y="118" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1585484922377" />
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1585698530217">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1585698530217" />
+    <state x="339" y="162" key="run.anything.popup" timestamp="1585493118155">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1585493118155" />
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

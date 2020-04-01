@@ -1,0 +1,40 @@
+    .videoIc{
+    max-height:25rem;
+  overflow-y:scroll;
+  }
+.videobasliq {
+    width: 41%;
+} 
+.videobasliq .btn-secondary {
+     margin-top: 25px; 
+}
+
+@media (max-width: 1160px) {
+	#videoarea {
+    width: 60%;
+}
+	.videobasliq {
+    width: 40%;
+}
+}
+@media (max-width: 680px) {
+	#videoarea {
+    width: 100%;
+}
+	.videobasliq {
+    width: 100%;
+}
+.lessonUser-cont {
+    height: 650px;
+}
+}
+@media (max-width: 767px) and (min-width: 480px){
+.videobasliq .btn-secondary {
+     margin-top: 0; 
+}
+}
+#lessonUser-cover2 {
+    padding-top: 30px;
+    margin: auto;
+    background-color: #fff;
+}
