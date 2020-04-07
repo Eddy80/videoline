@@ -49,7 +49,7 @@ Route::get('/payment', function () {
 Route::get('/login', function () {
     return view('login');
 });
-Route::post('/logmein','Auth\LoginController@login');
+Route::post('/logmain','Auth\LoginController@login');
 Route::get('/logout','Auth\LoginController@logout');
 /*
 Route::get('/home', function () {
@@ -114,6 +114,8 @@ Route::get('/logout','Auth\LoginController@logout');
 Route::group([
     'middleware'=>'member'
 ], function(){
+
+    Route::get('/cab', 'UserController@cab');
 
 /*
     Route::post('/usercodesave', 'TrackingsController@setusercode');

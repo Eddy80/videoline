@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers\Auth;
 
-use App\Codes;
+
 use App\Http\Controllers\Controller;
 use App\User;
 use Illuminate\Foundation\Auth\RegistersUsers;
@@ -72,12 +72,12 @@ class RegisterController extends Controller
 
         $user = User::add($request->all());
 
-        
+
         Auth::login($user);
-     
+
         return redirect('/cab');
     }
 
 
-   
+
 }

@@ -10,12 +10,12 @@ class AdminMiddleware
 
     public function handle($request, Closure $next)
     {
-        if ( Auth::check() && Auth::user()->status==999 )
+        if ( Auth::check()) // && Auth::user()->status==999 )
         {
             return $next($request);
         }
         else {
-            return redirect('/home');
+            return redirect('/');
 
 
         }

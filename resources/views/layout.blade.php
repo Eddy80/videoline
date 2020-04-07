@@ -103,13 +103,14 @@
                 <div id="logged" style="display: none;"></div>
                 <div class="menu2">
                     <ul>
-                        <li><a href="#"><img src="/assets/img/user.png"> </a>
+                        <li><a href="#"><img src="/assets/img/user.png"></a>
                             <ul class="dropdown">
-                                <li><a href="#"></a>{{Auth::user()->email}}</li>
-                                <li><a href="/mypayaccount">{{Auth::user()->firstname}} {{Auth::user()->lastname}}</a></li>
-                                <li><a href="/changepassword">KEÇƏRSÖZÜ DƏYİŞ</a></li>
-                                <li><a href="/profile">VİDEOLARIM</a></li>
-                                <li><a href="/certifications">SERTİFİKATLARIM</a></li>
+                                <li><a href="#">{{Auth::user()->firstname}} {{Auth::user()->lastname}}</a></li>
+                                <li><a href="/cab">Profilim</a></li>
+                                <li><a href="/mypayaccount">Hesabım</a></li>
+                                <li><a href="/changepassword">Parolu dəyiş</a></li>
+                                <li><a href="/cab">Videolarım</a></li>
+                                <li><a href="/certifications">Sertifikatlarım</a></li>
                             </ul>
                         </li>
                        <li  class="isfend"><a href="{{url('logout')}}">&nbsp;&nbsp;&nbsp;&nbsp;Çıxış</a>
@@ -126,63 +127,54 @@
 @yield('content' )
 
 <section id="footer">
-  <div class="container">
-      <div class="row">
-          <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3">
-              <div class="foot-link"><a href="/">ANA SƏHİFƏ</a></div>
-              <div class="foot-link"><a href="/about">HAQQIMIZDA</a></div>
-              <div class="foot-link"><a href="/lessons">TƏLİMLƏR</a></div>
-              <div class="foot-link"><a href="/experts">EKSPERTLƏR</a></div>
-              <div class="foot-link"><a href="/comments">RƏYLƏR</a></div>
-              <div class="foot-link"><a href="#partners">PARTNYORLAR</a></div>
-              <div class="foot-link copy"> © CIBS LLC | 2018
-
+    <div class="container">
+          <div class="row">
+              <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                  <div class="foot-link"><a href="/">ANA SƏHİFƏ</a></div>
+                  <div class="foot-link"><a href="/about">HAQQIMIZDA</a></div>
+                  <div class="foot-link"><a href="/lessons">TƏLİMLƏR</a></div>
+                  <div class="foot-link"><a href="/experts">EKSPERTLƏR</a></div>
+                  <div class="foot-link"><a href="/comments">RƏYLƏR</a></div>
+                  <div class="foot-link"><a href="#partners">PARTNYORLAR</a></div>
+                  <div class="foot-link copy"> © CIBS LLC | 2018</div>
               </div>
-          </div>
-
               <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
                   <div class="foot-link"><a href="#">BİZİMLƏ ƏLAQƏ</a></div>
                   <div class="foot-link"><a href="#"></a>+994 12 505 47 46</div>
                   <div class="foot-link"><a href="#"></a>+994 55 374 80 63</div>
                   <div class="foot-link"><a href="#"></a>Cəfər Cabbarlı küç. 44</div>
                   <div class="foot-link">Caspian Plaza</div>
-
               </div>
-              <div class="col-sm-5 col-md-5 col-lg-5 col-xl-5">
-                <div class="join">Bizə qoşulun:</div>
-                <div class="social">
-
+                  <div class="col-sm-5 col-md-5 col-lg-5 col-xl-5">
+                  <div class="join">Bizə qoşulun:</div>
+                  <div class="social">
                       <a href="#"><img src="/assets/img/face.png"></a>
                       <a href="#"><img src="/assets/img/ins.png"></a>
                       <a href="#"><img src="/assets/img/you.png"></a>
                       <!--
                       <a href="#"><img src="/img/gplus.png"></a>
-
                       <a href="#"><img src="/img/twit.png"></a>
                       <a href="#"><img src="/img/in.png"></a>
                       -->
-
-
-
-                </div>
-                <br>
-                      <div id="webcounter" align="right">
-                      <!--LiveInternet counter-->
-                                        <!-- <script type="text/javascript">
-                              document.write("<a href='//www.liveinternet.ru/click' "+
-                              "target=_blank><img src='//counter.yadro.ru/hit?t28.6;r"+
-                              escape(document.referrer)+((typeof(screen)=="undefined")?"":
-                              ";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
-                              screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
-                              ";h"+escape(document.title.substring(0,150))+";"+Math.random()+
-                              "' alt='' title='LiveInternet: number of visitors and pageviews"+
-                              " is shown' "+
-                              "border='0' width='88' height='120'><\/a>")
-                              </script>/LiveInternet-->
-                      </div>
+                  </div>
+                  <br/>
+                  <div id="webcounter" align="right">
+                  <!--LiveInternet counter-->
+                                    <!-- <script type="text/javascript">
+                          document.write("<a href='//www.liveinternet.ru/click' "+
+                          "target=_blank><img src='//counter.yadro.ru/hit?t28.6;r"+
+                          escape(document.referrer)+((typeof(screen)=="undefined")?"":
+                          ";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+                          screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+                          ";h"+escape(document.title.substring(0,150))+";"+Math.random()+
+                          "' alt='' title='LiveInternet: number of visitors and pageviews"+
+                          " is shown' "+
+                          "border='0' width='88' height='120'><\/a>")
+                          </script>/LiveInternet-->
+                  </div>
               </div>
-      </div>
-  </div>
+          </div>
+    </div>
 </section>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" type="text/javascript" charset="utf-8" ></script>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
@@ -192,6 +184,18 @@
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
 <script src="/assets/js/all.js"></script>
 <script src="/assets/js/my.js"></script>
+<script type="text/javascript">
+    function validateNumber(event) {
+        var key = window.event ? event.keyCode : event.which;
+        if (event.keyCode === 8 || event.keyCode === 46) {
+            return true;
+        } else if ( key < 48 || key > 57 ) {
+            return false;
+        } else {
+            return true;
+        }
+    };
+</script>
 </body>
 </html>
 

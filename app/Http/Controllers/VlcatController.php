@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Vlcat;
+use App\Vluservideos;
 use App\Vlvideo;
 use Illuminate\Http\Request;
 use Auth;
@@ -106,4 +107,7 @@ class VlcatController extends Controller
         $user = Auth::user();
         return view('lesson', ['lesson'=>$lesson, 'videos'=>$videos, 'currentuser'=>$user]);
     }
+
+
+
 }

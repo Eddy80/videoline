@@ -1,6 +1,8 @@
 /node_modules
 /public/hot
 /public/storage
+/public/assets/vl_videos
+/resources/views/assets/vl_videos
 /storage/*.key
 /vendor
 .env

@@ -8,7 +8,7 @@ class Vluser extends Model
 {
     protected $fillable = [
         'firstname', 'lastname','surname', 'email', 'password',
-        'gender', 'usercode', 'phone', 'passport', 'description', 'avatar'
+        'gender',  'phone', 'passport', 'description', 'avatar'
     ];
 
     protected $hidden = [

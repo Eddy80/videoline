@@ -95,16 +95,9 @@ class VluserController extends Controller
     }
 
 
-    public function logout()
-    {
-        Auth::logout();
-        return redirect('/home');
-    }
-
-
 
     public static function getList()
     {
-        return User::all();
+        return Vluser::all();
     }
 }

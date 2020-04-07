@@ -10,17 +10,17 @@ class MemberMiddleware
 
     public function handle($request, Closure $next)
     {
-        if ( Auth::check() && Auth::user()->status==999 )
+       /* if ( Auth::check() ) //&& Auth::user()->status==999 )
         {
-            return redirect('/admin');
+            return redirect('/cab');
         }
-        else  if ( Auth::check() ) //&& Auth::user()->status != 999  )
+
+        else */ if ( Auth::check() ) //&& Auth::user()->status != 999  )
         {
             return $next($request);
         }
         else {
-            return redirect('/home');
-
+            return redirect('/');
 
         }
 

@@ -2,6 +2,9 @@
 @extends('layout')
 
 @section('content')
+    <?php
+    $today = date("Y-m-d");
+    ?>
     <section id="lessonUser-cover">
         <div class="container">
             <div class="row text-center">
@@ -75,7 +78,7 @@
                                         @endphp
 
                                         @if (Auth::check())
-                                            {{$today = date("Y-m-d")}}
+
                                             @if (($currentuser->status==1) && ($currentuser->payexpiredate>$today) )
                                                 @if ( ($currentuser->payamount==39) || ($currentuser->payamount==89) || ($currentuser->payamount==189) )
                                                     <li class="list" movieurl="/assets/vl_payed_videos/cat{{ $lesson->id }}/{{$video->filename}}" movieid="{{$video->id}}" moviename="{{htmlentities(htmlspecialchars(trim($video->name)))}}">
@@ -113,7 +116,7 @@
                                 </div>
                                 <div class="text-center">
                                     @if (Auth::check())
-                                        {{$today = date("Y-m-d")}}
+
                                         @if ( ($currentuser->status==1) and ($currentuser->payamount>0) and ($currentuser->payexpiredate>$today) )
                                             <button type="button" class="btn btn-secondary" onclick="window.location.href = '/profile';">
                                             Sertifikat al
@@ -154,7 +157,7 @@
                         <br/>
                         <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
                             @if (Auth::check())
-                                {{$today = date("Y-m-d")}}
+
                                 @if (($currentuser->status==1) and ($currentuser->payamount>0) and ($currentuser->payexpiredate>$today) )
                                 <div style="text-align: right;">
                                     <a href="/vl_payed_videos/param.pdf"> <img src="/img/pdf.png" class="lessonUser-img" title="Təlimin slaydı" /></a>
