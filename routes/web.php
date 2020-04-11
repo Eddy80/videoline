@@ -117,6 +117,14 @@ Route::group([
 
     Route::get('/cab', 'UserController@cab');
 
+    Route::post('/cabcard', 'UserController@cabcard');
+
+    Route::get('/mypayaccount', 'UserController@mypayaccount');
+
+    Route::get('/changepassword',  function () {
+        return view('changepassword');
+    });
+
 /*
     Route::post('/usercodesave', 'TrackingsController@setusercode');
 

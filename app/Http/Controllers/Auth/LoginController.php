@@ -57,7 +57,9 @@ class LoginController extends Controller
 
         if ($user){
             Auth::login($user);
+            return redirect('/cab');
 
+            /*
             $currentuser = Auth::user();
             $uservideos = Vluservideos::where('userid', $currentuser->id)->groupby('catid')->get('catid');
 
@@ -70,7 +72,7 @@ class LoginController extends Controller
                 $percent = round($countofuservideosbylesson*100/$countofvideosinlessons);
                 array_push($arrayresult, array($uservideo->catid, $lessonname[0], $lessonduration[0], $percent));
             }
-            return view('cab', ['arrayresult'=>$arrayresult,  'currentuser'=>$currentuser]);
+            return view('cab', ['arrayresult'=>$arrayresult,  'currentuser'=>$currentuser]);*/
         }
         return redirect()->back()->with('status','Yalnış email və ya parol');
     }

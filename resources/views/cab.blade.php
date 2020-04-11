@@ -52,25 +52,18 @@
                                 ?>
 
                                 @if (  ($currentuser->payamount>0) && ($currentuser->payexpiredate> $today ) )
-                                <div class="ozel">
-                                    <h2>Videoline Özel Üzvlüyü</h2>
-                                    <p>Qalan günlər:</p>
-                                    <a href="#"><?php  if ( $daydiff <= 280)  echo $daydiff." gün"; else echo "Müddətsiz"; ?>  </a>
-                                </div>
-                                <div class="uyelik">
-                                    <a href="/payment" class="uye">Üzvlüyü uzat</a>
-                                    <p><!-- Tövsüyə et <a href="#">Üzvlük qazan</a>--></p>
-                                </div>
-                               @else
-                                <div class="ozel">
-                                    <h2>Videoline Özəl Üzvlüyü</h2>
-                                    <p><!--Qalan günlər:--></p>
-                                    <!--<a href="#">0 gün</a>-->
-                                </div>
-                                <div class="uyelik">
-                                    <a href="/payment" class="uye" target="blank">Üzvlük üçün ödəniş et</a>
-                                    <p><!-- Tövsiyə et <a href="#">Üzvlük qazan</a>--></p>
-                                </div>
+                                    <div class="ozel">
+                                        <h2>Videoline Özel Üzvlüyü</h2>
+                                        <p>Qalan günlər:</p>
+                                        <a href="#"><?php  if ( $daydiff <= 280)  echo $daydiff." gün"; else echo "Müddətsiz"; ?>  </a>
+                                    </div>
+                                    <div class="uyelik">
+                                        <a href="/payment" class="uye">Üzvlüyü uzat</a>
+                                        <p><!-- Tövsüyə et <a href="#">Üzvlük qazan</a>--></p>
+                                    </div>
+                                @else
+                                    <div class="ozel"><h2>Videoline Özəl Üzvlüyü</h2><p><!--Qalan günlər:--></p><!--<a href="#">0 gün</a>--></div>
+                                    <div class="uyelik"><a href="/payment" class="uye" target="blank">Üzvlük üçün ödəniş et</a><p><!-- Tövsiyə et <a href="#">Üzvlük qazan</a>--></p></div>
                                 @endif
                                 <div class="ozel">
                                     <h2><span style="color:green; font-weight: bold; font-size: 16px;">Fərdi Endirim kodum:</span> </h2>
@@ -87,15 +80,9 @@
                                     </script>
 
                                     @if ($currentuser->myprivatepromokod!="-1")
-                                    <a href="javascript:void(0)" onclick = "copy(this)">
-                                        {{$currentuser->myprivatepromokod}}
-                                    </a>
-                                    <br>
-                                    <div>
-                                          <span style="color:#660066; font-weight: bold; font-size: 10px;text-align: center;">
-                                          (köçürtmək üçün endirim kodunu klikləyin)
-                                          </span>
-                                    </div>
+                                        <a href="javascript:void(0)" onclick = "copy(this)">{{$currentuser->myprivatepromokod}}</a>
+                                        <br>
+                                        <div><span style="color:#660066; font-weight: bold; font-size: 10px;text-align: center;">(köçürtmək üçün endirim kodunu klikləyin)</span></div>
                                     @else
                                         <a href="#">Endirim kodunu əldə etmək üçün 189 manatlıq paket almalısınız...</a>
                                     @endif
@@ -111,86 +98,62 @@
                 </div>
                 <div style="text-align: center; width: 95%">
                     @if ($currentuser->myprivatepromokod != "-1")
-                       <?php
-                        /* $fieldpromo = " `promokodforpay` = '".$myPrivatePromoKod."'  AND paywaiting != 1 AND payedtouser != 1";
-                        $postspromo = $data->selectpromo('vl_userpaylog',$fieldpromo, "");
-                        $totalProfit = 0;
-                        $outhead = '*/
-                                        ?>
-                                <span style="font-size: 16px;font-weight: bold;color: green;padding-top: 10px;">PROMO KODLA APARILAN ÖDƏNİŞLƏRİN STATİSTİKASI</span><br>
+                        @if($totalprofit !=0)
+                        <span style="font-size: 16px;font-weight: bold;color: green;padding-top: 10px;">PROMO KODLA APARILAN ÖDƏNİŞLƏRİN STATİSTİKASI</span>
+                        <br/>
+                        <table style="width:100%;font-size:14px;margin-top:20px;margin-bottom:20px;">
+                            <tr>
+                                <td><b>Adı</b></td>
+                                <td><b>Soyadı</b></td>
+                                <td><b>Ödəniş Tarixi</b></td>
+                                <td><b>Ödənilən Məbləğ</b></td>
+                                <td><b>Qazanc</b></td>
+                            </tr>
+                            @foreach($promos as $promo)
+                                <tr>
+                                    <td>{{$promo->firstname}}</td>
+                                    <td>{{$promo->lastname}}</td>
+                                    <td>{{$promo->paydate}}</td>
+                                    <td>{{$promo->payamount}} (manat)</td>
+                                    <td>{{$promo->payamount*50/100}} (manat)</td>
+                                </tr>
+                            @endforeach
+                        </table>
+                        <span style="font-size: 16px; font-weight: bold; color: green; padding-top: 10px;">CƏMİ QAZANC: </span>
+                        <span style="font-size: 18px;font-weight: bold;color:red;padding-top: 10px;">{{$totalProfit}}</span>
+                        <span style="font-size: 16px;font-weight: bold;color:black;padding-top: 10px;"> manat<br></span>
+                        <form id="form" action="/cabcard"  method="post" autocomplete=off >
+                        <br>
+                        <span style='font-size: 14px;font-weight: bold;color: black;padding-top: 10px;'>Qazancı pul şəklində çıxartmaq üçün Bank kartınızın üzərindəki 16 rəqəmli nömrəni daxil edin: </span><br/>
+                        <input type='input'  name='cardnumber' id='cardnumber' size='16' maxlength='16' value='' placeholder='16 rəqəmli bank kart nömrəniz' style='font-size: 16px;font-weight: bold;color: green;margin-top: 10px; margin-bottom: 10px; width:290px;'  />
+                        <br>
+                        <span style='font-size: 14px;font-weight: bold;color: black;padding-top: 10px;'>Kart kimin adınadır? </span><br/>
+                        <input type='text' name='cardname' id='cardname' size='26' maxlength='26' value='' placeholder='Adınız Soyadınız' style='font-size: 16px;font-weight: bold;color: green;margin-top: 10px; margin-bottom: 10px; width:290px;'/>
+                        <input type='hidden' name='payedtouserAmount' id='payedtouserAmount' value='".$totalProfit."' />
+                        <input type='hidden' name='mypromokodforpay' id='mypromokodforpay' value='".$myPrivatePromoKod."' />
+                        <br>
+                        <a href="#" onclick="document.getElementById('form').submit()" style="margin-bottom: 10px; color:red;font-size:14px; font-weight:bold;text-decoration:none;" >Pulu Çıxart !</a>
+                        </form>
+                        <br>
+                        @endif
 
-                                <table style="width:100%;font-size:14px;margin-top:20px;margin-bottom:20px;">
-                                <tr><td><b>İstifadəçi adı</b></td><td><b>Adı</b></td><td><b>Soyadı</b></td><td><b>Ödəniş Tarixi</b></td><td><b>Ödənilən Məbləğ</b></td><td><b>Qazanc</b></td></tr>
-                                       <?php /*$out = "";
-                                        foreach($postspromo as $postpromo)
-                                        {
-                                            $usernamePr = $postpromo['username'];
-                                            $fNamePr = $postpromo['fname'];
-                                            $lNamePr = $postpromo['lname'];
-                                            $payDatePr = $postpromo['payDate'];
-                                            $payAmountPr = $postpromo['payAmount'];
-                                            // $profitPr = $payAmountPr*20/100; // 20% cashback
-                                            $profitPr = $payAmountPr*50/100;
-                                            $totalProfit += $profitPr;
-                                            $out .=" <tr><td>$usernamePr</td><td>$fNamePr</td><td>$lNamePr</td><td>$payDatePr</td><td>$payAmountPr (manat)</td><td>$profitPr (manat)</td></tr> ";
-                                            //break;
-                                        }
-
-
-                                        $outfoot =  "</table>";
-
-                                        if ($totalProfit!=0){
-
-                                        echo $outhead;
-                                        echo $out;
-                                        echo $outfoot;
-
-                                        echo '<span style="font-size: 16px; font-weight: bold; color: green; padding-top: 10px;">CƏMİ QAZANC: </span><span style="font-size: 18px;font-weight: bold;color:red;padding-top: 10px;">'.$totalProfit.'</span><span style="font-size: 16px;font-weight: bold;color:black;padding-top: 10px;"> manat <br></span>';
-                                        echo '<form id="form" action="'.$path.'/profile/index.php"  method="post" autocomplete=off >';
-                                        echo "<br>
-                                <span style='font-size: 14px;font-weight: bold;color: black;padding-top: 10px;'>Qazancı pul şəklində çıxartmaq üçün Bank kartınızın üzərindəki 16 rəqəmli nömrəni daxil edin: </span><br/>
-                                <input type='input'  name='cardnumber' id='cardnumber' size='16' maxlength='16' value='' placeholder='16 rəqəmli bank kart nömrəniz' style='font-size: 16px;font-weight: bold;color: green;margin-top: 10px; margin-bottom: 10px; width:290px;'  />
-                                <br>
-                                <span style='font-size: 14px;font-weight: bold;color: black;padding-top: 10px;'>Kart kimin adınadır? </span><br/>
-                                <input type='text' name='cardname' id='cardname' size='26' maxlength='26' value='' placeholder='Adınız Soyadınız' style='font-size: 16px;font-weight: bold;color: green;margin-top: 10px; margin-bottom: 10px; width:290px;'/>
-
-                                <input type='hidden' name='payedtouserAmount' id='payedtouserAmount' value='".$totalProfit."' />
-                                <input type='hidden' name='mypromokodforpay' id='mypromokodforpay' value='".$myPrivatePromoKod."' />
-                                <br>";
-                                        ?>
-                                        <a href="#" onclick="document.getElementById('form').submit()" style="margin-bottom: 10px; color:red;font-size:14px; font-weight:bold;text-decoration:none;" >Pulu Çıxart !</a>
-                                        <?php
-                                        echo "
-                                </form>
-                                <br>
-                                &nbsp;";
-                                        }
-
-                                        $fieldpromo = " `promokodforpay` = '".$myPrivatePromoKod."'  AND paywaiting != 0 AND payedtouser != 1";
-                                        $postspromo = $data->selectpromo('vl_userpaylog',$fieldpromo, "");
-                                        $totalProfitWaiting = 0;
-                                        foreach($postspromo as $postpromo)
-                                        {
-                                            $payAmountPr = $postpromo['payAmount'];
-                                            //$profitPr = $payAmountPr*20/100;  // 20 % cashback
-                                            $profitPr = $payAmountPr*50/100;    // 50 % cashback
-                                            $totalProfitWaiting += $profitPr;
-
-
-                                        }
-
-                                        if ($totalProfitWaiting!=0){
-                                            echo '<br><span style="font-size: 16px; font-weight: bold; color: red; padding-top: 10px;">Ödənilmə gözləmə rejimində: </span><span style="font-size: 18px;font-weight: bold;color:green;padding-top: 10px;">'.$totalProfitWaiting.'</span><span style="font-size: 16px;font-weight: bold;color:black;padding-top: 10px;"> manat <br></span>';
-                                            echo "<br><br/>
-                               <span style='color:green;  font-size: 12px;text-align: center; margin-top: 50px;'>QEYD: Hər ayın 15-də ödənişlər həyata keçir.</span><br><br/>";
-                                        }
-
-                    }
-
-                    break;
-                    }
-*/
-                    ?>
+                        @if ($totalprofitwaiting!=0)
+                            <br/>
+                                <span style="font-size: 16px; font-weight: bold; color: red; padding-top: 10px;">
+                                    Ödənilmə gözləmə rejimində:
+                                </span>
+                                <span style="font-size: 18px;font-weight: bold;color:green;padding-top: 10px;">
+                                    {{$totalprofitwaiting}}
+                                </span>
+                                <span style="font-size: 16px;font-weight: bold;color:black;padding-top: 10px;">
+                                    manat <br/>
+                                </span>';
+                            <br/><br/>
+                            <span style='color:green;  font-size: 12px;text-align: center; margin-top: 50px;'>
+                                QEYD: Hər ayın 15-də ödənişlər həyata keçir.
+                            </span>
+                            <br/><br/>
+                        @endif
                     @endif
                 </div>
             </div>
@@ -198,48 +161,3 @@
     </div>
 </section>
 @endsection
-<?php
-/*
-
-$cardnumber = -1;
-if (isset($_POST['cardnumber']))
-{
-if ($_POST['cardnumber']!='')
-$cardnumber = $_POST['cardnumber'];
-}
-
-$cardname = "-1";
-if (isset($_POST['cardname']))
-{
-if ($_POST['cardname']!='')
-$cardname = $_POST['cardname'];
-}
-
-$mypromokodforpay = "-1";
-if (isset($_POST['mypromokodforpay']))
-{
-if ($_POST['mypromokodforpay']!='')
-$mypromokodforpay = $_POST['mypromokodforpay'];
-}
-
-$payedtouserAmount = "-1";
-if (isset($_POST['payedtouserAmount']))
-{
-if ($_POST['payedtouserAmount']!='')
-$payedtouserAmount = $_POST['payedtouserAmount'];
-}
-
-if (($cardnumber!=-1) && ($cardname!="-1") && ($mypromokodforpay!="-1")){
-
-$fieldodenishlog = array('paywaiting' => 1, 'cardnumber' => $cardnumber, 'cardname' => $cardname, 'payedtouserAmount' =>$payedtouserAmount);
-$condodenishlog = array('promokodforpay'    =>  $mypromokodforpay, 'paywaiting' => 0, 'payedtouser' => 0 );
-
-if($data->update("vl_userpaylog", $fieldodenishlog, $condodenishlog))
-{
-//echo "MODIFIED";
-$cardnumber=-1;$cardname="-1"; $mypromokodforpay="-1";
-}
-}
-
-*/
-?>

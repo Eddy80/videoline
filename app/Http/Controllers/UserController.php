@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\User;
 use App\Vlcat;
+use App\Vluserpaylog;
 use App\Vluservideos;
 use App\Vlvideo;
 use Illuminate\Http\Request;
@@ -115,7 +116,121 @@ class UserController extends Controller
                 $countofuservideosbylesson = Vluservideos::where('userid', $currentuser->id)->where('catid', $uservideo->catid)->count();
                 $percent = round($countofuservideosbylesson*100/$countofvideosinlessons);
                 array_push($arrayresult, array($uservideo->catid, $lessonname[0], $lessonduration[0], $percent));
+
+
+                $promos = Vluserpaylog::where('promokodforpay', $currentuser->myprivatepromokod)->
+                                       where('paywaiting', '<>', 1)->
+                                       where('payedtouser', '<>', 1)->get();
+
+                $totalprofit = Vluserpaylog::where('promokodforpay', $currentuser->myprivatepromokod)->
+                where('paywaiting', '<>', 1)->
+                where('payedtouser', '<>', 1)->get()->sum("payamount")*50/100; // 50 % cashback
+
+
+                $promoswaiting = Vluserpaylog::where('promokodforpay', $currentuser->myprivatepromokod)->
+                where('paywaiting', '<>', 0)->
+                where('payedtouser', '<>', 1)->get();
+
+                $totalprofitwaiting = Vluserpaylog::where('promokodforpay', $currentuser->myprivatepromokod)->
+                where('paywaiting', '<>', 0)->
+                where('payedtouser', '<>', 1)->get()->sum("payamount")*50/100;  // 50 % cashback
+
+
+
             }
-            return view('cab', ['arrayresult'=>$arrayresult,  'currentuser'=>$currentuser]);
+            return view('cab', ['arrayresult'=>$arrayresult, 'promos'=>$promos, 'totalprofit'=>$totalprofit,  'totalprofitwaiting'=>$totalprofitwaiting,'currentuser'=>$currentuser]);
+    }
+
+
+    public function cabcard($request)
+    {
+
+        dd($request);
+
+        /*
+
+        $cardnumber = -1;
+        if (isset($_POST['cardnumber']))
+        {
+        if ($_POST['cardnumber']!='')
+        $cardnumber = $_POST['cardnumber'];
+        }
+
+        $cardname = "-1";
+        if (isset($_POST['cardname']))
+        {
+        if ($_POST['cardname']!='')
+        $cardname = $_POST['cardname'];
+        }
+
+        $mypromokodforpay = "-1";
+        if (isset($_POST['mypromokodforpay']))
+        {
+        if ($_POST['mypromokodforpay']!='')
+        $mypromokodforpay = $_POST['mypromokodforpay'];
+        }
+
+        $payedtouserAmount = "-1";
+        if (isset($_POST['payedtouserAmount']))
+        {
+        if ($_POST['payedtouserAmount']!='')
+        $payedtouserAmount = $_POST['payedtouserAmount'];
+        }
+
+        if (($cardnumber!=-1) && ($cardname!="-1") && ($mypromokodforpay!="-1")){
+
+        $fieldodenishlog = array('paywaiting' => 1, 'cardnumber' => $cardnumber, 'cardname' => $cardname, 'payedtouserAmount' =>$payedtouserAmount);
+        $condodenishlog = array('promokodforpay'    =>  $mypromokodforpay, 'paywaiting' => 0, 'payedtouser' => 0 );
+
+        if($data->update("vl_userpaylog", $fieldodenishlog, $condodenishlog))
+        {
+        //echo "MODIFIED";
+        $cardnumber=-1;$cardname="-1"; $mypromokodforpay="-1";
+        }
+        }
+
+        */
+
+
+        $this->cab();
+    }
+
+
+    public function mypayaccount()
+    {
+        $currentuser = Auth::user();
+        $uservideos = Vluservideos::where('userid', $currentuser->id)->groupby('catid')->get('catid');
+
+        $arrayresult = [];
+        foreach ($uservideos as  $uservideo){
+            $lessonname = Vlcat::where('id', $uservideo->catid)->pluck('name');
+            $lessonduration = Vlcat::where('id', $uservideo->catid)->pluck('totaldurationinseconds');
+            $countofvideosinlessons = Vlvideo::where('catid', $uservideo->catid)->count();
+            $countofuservideosbylesson = Vluservideos::where('userid', $currentuser->id)->where('catid', $uservideo->catid)->count();
+            $percent = round($countofuservideosbylesson*100/$countofvideosinlessons);
+            array_push($arrayresult, array($uservideo->catid, $lessonname[0], $lessonduration[0], $percent));
+
+
+            $promos = Vluserpaylog::where('promokodforpay', $currentuser->myprivatepromokod)->
+            where('paywaiting', '<>', 1)->
+            where('payedtouser', '<>', 1)->get();
+
+            $totalprofit = Vluserpaylog::where('promokodforpay', $currentuser->myprivatepromokod)->
+                where('paywaiting', '<>', 1)->
+                where('payedtouser', '<>', 1)->get()->sum("payamount")*50/100; // 50 % cashback
+
+
+            $promoswaiting = Vluserpaylog::where('promokodforpay', $currentuser->myprivatepromokod)->
+            where('paywaiting', '<>', 0)->
+            where('payedtouser', '<>', 1)->get();
+
+            $totalprofitwaiting = Vluserpaylog::where('promokodforpay', $currentuser->myprivatepromokod)->
+                where('paywaiting', '<>', 0)->
+                where('payedtouser', '<>', 1)->get()->sum("payamount")*50/100;  // 50 % cashback
+
+
+
+        }
+        return view('myaccount', ['arrayresult'=>$arrayresult, 'promos'=>$promos, 'totalprofit'=>$totalprofit,  'totalprofitwaiting'=>$totalprofitwaiting,'currentuser'=>$currentuser]);
     }
 }

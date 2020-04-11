@@ -15,6 +15,17 @@ class CreateVluserpaylogsTable extends Migration
     {
         Schema::create('vluserpaylogs', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->integer('userid');
+            $table->string('firstname');
+            $table->string('lastname');
+            $table->double('payamount');
+            $table->date('paydate');
+            $table->string('promokodforpay');
+            $table->integer('paywaiting');
+            $table->integer('payedtouser');
+            $table->string('cardnumber');
+            $table->string('cardname');
+            $table->double('payedtouseramount');
             $table->timestamps();
         });
     }

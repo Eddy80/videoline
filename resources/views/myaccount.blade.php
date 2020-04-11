@@ -12,37 +12,73 @@
                 <div class="endLesson">
                     <!--<div class="vertic text-center"><a href="#" >online konsultasiya</a></div>-->
                      <div class="endLesson-top">
-                        <h2>Xoş gəldin {{$currentuser->firstname}} {{$currentuser->lastname}}</h2>
-                        <p>Videoline'ın hər gün genişlənən dərs videoları ilə ehtiyacın olan hər mövzu burada!</p>
+                        <h2>Hesabım : -  {{$currentuser->firstname}} {{$currentuser->lastname}}</h2>
                      </div>
                      <div class="endLesson-content">
                          <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                             <div id="myuservideos">
-                                 <div class="list-group">
-                                     @foreach($arrayresult as $arrayitem)
-                                         @if ($arrayitem[3]<100)
-                                             <a href="/lesson/{{$arrayitem[0]}}" class="list-group-item list-group-item-action endLesson-lesson">{{$arrayitem[1]}}
-                                                <div class="link">
-                                                    <button type="button" class="btn btn-secondary">{{$arrayitem[3]}}% Tamamlandı</button>
-                                                </div>
-                                             </a>
-                                         @else
-                                             <form name="form_{{$arrayitem[0]}}" id="form_{{$arrayitem[0]}}" action="/pdf.php"  method="post" target="blank" autocomplete=off >
-                                                 <input type="hidden" name="c" id="c" value="{{$arrayitem[1]}}"/>
-                                                 <input type="hidden" name="cid" id="cid" value="{{$arrayitem[0]}}"/>
-                                                 <input type="hidden" name="cdur" id="cdur" value="{{$arrayitem[0]}}"/>
-                                                 <input type="hidden" name="username" id="username" value="{{$currentuser->email}} "/>
-                                                 <input type="hidden" name="nm" id="nm" value="{{$currentuser->firstname}}  {{$currentuser->lastname}} "/>
-                                                 <a href="#" onclick="document.getElementById('form{{$arrayitem[0]}}').submit()" class="list-group-item list-group-item-action endLesson-lesson">{{$arrayitem[1]}}
-                                                     <div class="link">
-                                                         <button type="button" class="btn btn-secondary">Sertifikat al</button>
-                                                     </div>
-                                                 </a>
+                             <div class="list-group">
+                                 <div style="text-align: center; width: 95%;">
+                                     @if ($currentuser->myprivatepromokod != "-1")
+                                         @if($totalprofit !=0)
+                                             <span style="font-size: 16px;font-weight: bold;color: green;padding-top: 10px;">PROMO KODLA APARILAN ÖDƏNİŞLƏRİN STATİSTİKASI</span>
+                                             <br/>
+                                             <table style="width:100%;font-size:14px;margin-top:20px;margin-bottom:20px;">
+                                                 <tr>
+                                                     <td><b>Adı</b></td>
+                                                     <td><b>Soyadı</b></td>
+                                                     <td><b>Ödəniş Tarixi</b></td>
+                                                     <td><b>Ödənilən Məbləğ</b></td>
+                                                     <td><b>Qazanc</b></td>
+                                                 </tr>
+                                                 @foreach($promos as $promo)
+                                                     <tr>
+                                                         <td>{{$promo->firstname}}</td>
+                                                         <td>{{$promo->lastname}}</td>
+                                                         <td>{{$promo->paydate}}</td>
+                                                         <td>{{$promo->payamount}} (manat)</td>
+                                                         <td>{{$promo->payamount*50/100}} (manat)</td>
+                                                     </tr>
+                                                 @endforeach
+                                             </table>
+                                             <span style="font-size: 16px; font-weight: bold; color: green; padding-top: 10px;">CƏMİ QAZANC: </span>
+                                             <span style="font-size: 18px;font-weight: bold;color:red;padding-top: 10px;">{{$totalProfit}}</span>
+                                             <span style="font-size: 16px;font-weight: bold;color:black;padding-top: 10px;"> manat<br></span>
+                                             <form id="form" action="/cabcard"  method="post" autocomplete=off >
+                                                 <br>
+                                                 <span style='font-size: 14px;font-weight: bold;color: black;padding-top: 10px;'>Qazancı pul şəklində çıxartmaq üçün Bank kartınızın üzərindəki 16 rəqəmli nömrəni daxil edin: </span><br/>
+                                                 <input type='input'  name='cardnumber' id='cardnumber' size='16' maxlength='16' value='' placeholder='16 rəqəmli bank kart nömrəniz' style='font-size: 16px;font-weight: bold;color: green;margin-top: 10px; margin-bottom: 10px; width:290px;'  />
+                                                 <br>
+                                                 <span style='font-size: 14px;font-weight: bold;color: black;padding-top: 10px;'>Kart kimin adınadır? </span><br/>
+                                                 <input type='text' name='cardname' id='cardname' size='26' maxlength='26' value='' placeholder='Adınız Soyadınız' style='font-size: 16px;font-weight: bold;color: green;margin-top: 10px; margin-bottom: 10px; width:290px;'/>
+                                                 <input type='hidden' name='payedtouserAmount' id='payedtouserAmount' value='".$totalProfit."' />
+                                                 <input type='hidden' name='mypromokodforpay' id='mypromokodforpay' value='".$myPrivatePromoKod."' />
+                                                 <br>
+                                                 <a href="#" onclick="document.getElementById('form').submit()" style="margin-bottom: 10px; color:red;font-size:14px; font-weight:bold;text-decoration:none;" >Pulu Çıxart !</a>
                                              </form>
+                                             <br>
                                          @endif
-                                    @endforeach
-                                </div>
-                            </div>
+
+                                         @if ($totalprofitwaiting!=0)
+                                             <br/>
+                                             <span style="font-size: 16px; font-weight: bold; color: red; padding-top: 10px;">
+                                                Ödənilmə gözləmə rejimində:
+                                             </span>
+                                             <span style="font-size: 18px;font-weight: bold;color:green;padding-top: 10px;">
+                                                {{$totalprofitwaiting}}
+                                             </span>
+                                             <span style="font-size: 16px;font-weight: bold;color:black;padding-top: 10px;">
+                                                manat <br/>
+                                             </span>';
+                                             <br/><br/>
+                                             <span style='color:green;  font-size: 12px;text-align: center; margin-top: 50px;'>
+                                             QEYD: Hər ayın 15-də ödənişlər həyata keçir.
+                                             </span>
+                                             <br/><br/>
+                                         @endif
+                                     @endif
+                                 </div>
+                             </div>
+
 
                             <div class="uyelikBilgisi">
                                 <div class="link"><a href="#">Üzvlük məlumatları</a></div>
@@ -96,66 +132,7 @@
                         </div>
                     </div>
                 </div>
-                <div style="text-align: center; width: 95%">
-                    @if ($currentuser->myprivatepromokod != "-1")
-                        @if($totalprofit !=0)
-                        <span style="font-size: 16px;font-weight: bold;color: green;padding-top: 10px;">PROMO KODLA APARILAN ÖDƏNİŞLƏRİN STATİSTİKASI</span>
-                        <br/>
-                        <table style="width:100%;font-size:14px;margin-top:20px;margin-bottom:20px;">
-                            <tr>
-                                <td><b>Adı</b></td>
-                                <td><b>Soyadı</b></td>
-                                <td><b>Ödəniş Tarixi</b></td>
-                                <td><b>Ödənilən Məbləğ</b></td>
-                                <td><b>Qazanc</b></td>
-                            </tr>
-                            @foreach($promos as $promo)
-                                <tr>
-                                    <td>{{$promo->firstname}}</td>
-                                    <td>{{$promo->lastname}}</td>
-                                    <td>{{$promo->paydate}}</td>
-                                    <td>{{$promo->payamount}} (manat)</td>
-                                    <td>{{$promo->payamount*50/100}} (manat)</td>
-                                </tr>
-                            @endforeach
-                        </table>
-                        <span style="font-size: 16px; font-weight: bold; color: green; padding-top: 10px;">CƏMİ QAZANC: </span>
-                        <span style="font-size: 18px;font-weight: bold;color:red;padding-top: 10px;">{{$totalProfit}}</span>
-                        <span style="font-size: 16px;font-weight: bold;color:black;padding-top: 10px;"> manat<br></span>
-                        <form id="form" action="/cabcard"  method="post" autocomplete=off >
-                        <br>
-                        <span style='font-size: 14px;font-weight: bold;color: black;padding-top: 10px;'>Qazancı pul şəklində çıxartmaq üçün Bank kartınızın üzərindəki 16 rəqəmli nömrəni daxil edin: </span><br/>
-                        <input type='input'  name='cardnumber' id='cardnumber' size='16' maxlength='16' value='' placeholder='16 rəqəmli bank kart nömrəniz' style='font-size: 16px;font-weight: bold;color: green;margin-top: 10px; margin-bottom: 10px; width:290px;'  />
-                        <br>
-                        <span style='font-size: 14px;font-weight: bold;color: black;padding-top: 10px;'>Kart kimin adınadır? </span><br/>
-                        <input type='text' name='cardname' id='cardname' size='26' maxlength='26' value='' placeholder='Adınız Soyadınız' style='font-size: 16px;font-weight: bold;color: green;margin-top: 10px; margin-bottom: 10px; width:290px;'/>
-                        <input type='hidden' name='payedtouserAmount' id='payedtouserAmount' value='".$totalProfit."' />
-                        <input type='hidden' name='mypromokodforpay' id='mypromokodforpay' value='".$myPrivatePromoKod."' />
-                        <br>
-                        <a href="#" onclick="document.getElementById('form').submit()" style="margin-bottom: 10px; color:red;font-size:14px; font-weight:bold;text-decoration:none;" >Pulu Çıxart !</a>
-                        </form>
-                        <br>
-                        @endif
 
-                        @if ($totalprofitwaiting!=0)
-                            <br/>
-                                <span style="font-size: 16px; font-weight: bold; color: red; padding-top: 10px;">
-                                    Ödənilmə gözləmə rejimində:
-                                </span>
-                                <span style="font-size: 18px;font-weight: bold;color:green;padding-top: 10px;">
-                                    {{$totalprofitwaiting}}
-                                </span>
-                                <span style="font-size: 16px;font-weight: bold;color:black;padding-top: 10px;">
-                                    manat <br/>
-                                </span>';
-                            <br/><br/>
-                            <span style='color:green;  font-size: 12px;text-align: center; margin-top: 50px;'>
-                                QEYD: Hər ayın 15-də ödənişlər həyata keçir.
-                            </span>
-                            <br/><br/>
-                        @endif
-                    @endif
-                </div>
             </div>
         </div>
     </div>
